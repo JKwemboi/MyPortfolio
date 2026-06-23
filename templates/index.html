@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abimon | Portfolio</title>
+    <meta
+      name="description"
+      content="A personal portfolio for Abimon, featuring selected work, skills, and contact details."
+    />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <script src="{% static 'js/script.js' %}" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Abimon home">AB</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">Portfolio</p>
+          <h1 id="hero-title">Abimon</h1>
+          <p class="hero__summary">
+            I build clean, purposeful digital experiences with thoughtful design,
+            dependable code, and a focus on the people using them.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#work">View Work</a>
+            <a class="button button--secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--intro" aria-label="Portfolio overview">
+        <div class="section__inner intro-grid">
+          <div>
+            <p class="eyebrow">What I Do</p>
+            <h2>Useful products, polished interfaces, and smooth user journeys.</h2>
+          </div>
+          <p>
+            This portfolio is ready for your real projects, photos, links, and
+            achievements. The structure is intentionally lightweight so it is easy
+            to keep fresh as your work grows.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section__inner">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2 id="work-title">Projects</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-card__tag">Web Design</p>
+              <h3>Portfolio Website</h3>
+              <p>
+                A responsive personal site designed to present projects, skills,
+                and contact details in one polished place.
+              </p>
+              <a href="#contact" aria-label="Ask about the Portfolio Website project">Discuss Project</a>
+            </article>
+            <article class="project-card">
+              <p class="project-card__tag">Application</p>
+              <h3>Task Dashboard</h3>
+              <p>
+                A focused dashboard concept for tracking tasks, priorities, and
+                weekly progress without visual clutter.
+              </p>
+              <a href="#contact" aria-label="Ask about the Task Dashboard project">Discuss Project</a>
+            </article>
+            <article class="project-card">
+              <p class="project-card__tag">Brand System</p>
+              <h3>Creative Launch Page</h3>
+              <p>
+                A concise launch page concept with strong hierarchy, conversion
+                points, and a memorable visual direction.
+              </p>
+              <a href="#contact" aria-label="Ask about the Creative Launch Page project">Discuss Project</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="skills" aria-labelledby="skills-title">
+        <div class="section__inner skills-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Strengths</p>
+            <h2 id="skills-title">Skills</h2>
+          </div>
+          <div class="skill-list" aria-label="Skill list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive Design</span>
+            <span>UI Design</span>
+            <span>Problem Solving</span>
+            <span>Communication</span>
+            <span>Project Planning</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section__inner about-layout">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">A calm, practical approach to building for the web.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I enjoy turning ideas into usable digital experiences. My work
+              balances visual detail with simple, maintainable implementation.
+            </p>
+            <p>
+              Replace this section with your background, your strongest tools,
+              your current focus, and the kind of opportunities you want next.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div class="contact-band__inner">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's build something clear and memorable.</h2>
+          <p>
+            Available for portfolio reviews, web projects, collaborations, and
+            thoughtful digital product work.
+          </p>
+          <div class="contact-links">
+            <a class="button button--primary" href="mailto:hello@example.com">Email Me</a>
+            <a class="button button--secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
